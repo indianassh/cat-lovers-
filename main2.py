@@ -38,6 +38,15 @@ if st.button ('hitung') :
 else :
     st.write ('silikan tekan hasil pilihan mu :question:')
 
+import numpy as np
+array1 = np.random.randint(10,40, size=(10,))
+array2 = np.random.randint(10,40, size=(10,))
+
+import pandas as pd
+st.dataframe(pd.DataFrame({'kelas A' : array1,
+                           'Kelas B' : array2
+                          })
+            )
 
 
 
